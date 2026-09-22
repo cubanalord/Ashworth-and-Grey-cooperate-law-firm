@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact &amp; Book a Consultation · Ashworth &amp; Grey Solicitors LLP</title>
+  <meta name="description" content="Book a confidential consultation with a corporate law partner at Ashworth & Grey Solicitors LLP in London.">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg bg-white border-bottom sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html"><span class="brand-mark">A</span>Ashworth <span class="brand-amp">&</span> Grey</a>
+      <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-lg-center">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">Our Firm</a></li>
+          <li class="nav-item"><a class="nav-link" href="practice-areas.html">Practice Areas</a></li>
+          <li class="nav-item"><a class="nav-link" href="attorneys.html">Attorneys</a></li>
+          <li class="nav-item"><a class="nav-link active" href="contact.html">Contact</a></li>
+          <li class="nav-item ms-lg-3 mt-2 mt-lg-0"><a href="#book" class="btn btn-gold rounded-pill px-4 py-2">Book Consultation</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- PAGE HEADER -->
+  <section class="page-header">
+    <div class="container">
+      <span class="eyebrow light">Get in touch</span>
+      <h1 class="page-title">Book a Consultation</h1>
+      <p class="page-lead">Choose a date and time. First consultations are free and strictly confidential.</p>
+    </div>
+  </section>
+
+  <!-- BOOKING + DETAILS -->
+  <section id="book" style="padding: 5rem 0;">
+    <div class="container">
+      <div class="row g-5">
+
+        <!-- LEFT: office details -->
+        <div class="col-lg-4">
+          <span class="eyebrow">Our office</span>
+          <h2 class="section-title mb-4" style="font-size: 1.85rem;">City of London</h2>
+
+          <div class="d-flex mb-4">
+            <div class="contact-icon me-3"><i class="bi bi-geo-alt"></i></div>
+            <div>
+              <h6 class="fw-bold mb-1">Address</h6>
+              <p class="text-secondary mb-0 small">42 Cornhill<br>London EC3V 3ND<br>United Kingdom</p>
+            </div>
+          </div>
+          <div class="d-flex mb-4">
+            <div class="contact-icon me-3"><i class="bi bi-telephone"></i></div>
+            <div>
+              <h6 class="fw-bold mb-1">Telephone</h6>
+              <p class="text-secondary mb-0 small"><a href="tel:+442071234567" class="text-decoration-none text-dark">+44 20 7123 4567</a></p>
+            </div>
+          </div>
+          <div class="d-flex mb-4">
+            <div class="contact-icon me-3"><i class="bi bi-envelope"></i></div>
+            <div>
+              <h6 class="fw-bold mb-1">Email</h6>
+              <p class="text-secondary mb-0 small"><a href="mailto:hello@ashworthgrey.co.uk" class="text-decoration-none text-dark">hello@ashworthgrey.co.uk</a></p>
+            </div>
+          </div>
+          <div class="d-flex mb-4">
+            <div class="contact-icon me-3"><i class="bi bi-clock"></i></div>
+            <div>
+              <h6 class="fw-bold mb-1">Office Hours</h6>
+              <p class="text-secondary mb-0 small">Monday – Friday · 9:00 AM – 6:00 PM<br>Saturday &amp; Sunday · Closed</p>
+            </div>
+          </div>
+          <div class="d-flex mb-4">
+            <div class="contact-icon me-3"><i class="bi bi-train-front"></i></div>
+            <div>
+              <h6 class="fw-bold mb-1">Nearest Stations</h6>
+              <p class="text-secondary mb-0 small">Bank (3 min) · Cannon Street (5 min) · Liverpool Street (10 min)</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- RIGHT: booking form -->
+        <div class="col-lg-8">
+          <div class="contact-card">
+
+            <!-- STEP 1: The form -->
+            <div id="bookingFormWrap">
+              <h3 class="h4 mb-2">Reserve a Consultation</h3>
+              <p class="text-secondary small mb-4">Select a practice area, choose a date, then pick an available time slot. A partner will confirm by email within one business day.</p>
+
+              <form id="consultForm" novalidate>
+
+                <!-- Practice area + partner -->
+                <div class="row g-3 mb-4">
+                  <div class="col-md-6">
+                    <label for="practiceArea" class="form-label">Practice area *</label>
+                    <select class="form-select" id="practiceArea" required>
+                      <option value="" selected disabled>Select a practice area</option>
+                      <option value="corporate">Corporate Law</option>
+                      <option value="realestate">Real Estate &amp; Property</option>
+                      <option value="litigation">Litigation &amp; Dispute Resolution</option>
+                      <option value="compliance">Regulatory &amp; Compliance</option>
+                      <option value="oilgas">Oil &amp; Gas</option>
+                      <option value="other">Other / not sure</option>
+                    </select>
+                    <div class="invalid-feedback">Please choose a practice area.</div>
+                  </div>
+                  <div class="col-md-6">
+                    <label class="form-label">Your partner</label>
+                    <div class="partner-card">
+                      <img src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?auto=format&fit=crop&w=200&q=80" alt="Partner" class="partner-avatar" id="partnerAvatar">
+                      <div>
+                        <p class="name" id="partnerName">Eleanor Ashworth</p>
+                        <p class="role" id="partnerRole">Senior Partner · Corporate</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Date -->
+                <div class="mb-3">
+                  <label for="prefDate" class="form-label">Select a date *</label>
+                  <input type="date" class="form-control" id="prefDate" required>
+                  <div class="invalid-feedback">Please pick a date.</div>
+                  <p class="slot-legend mt-2 mb-0" id="dateHint">We are open Monday to Friday, 9:00 AM – 6:00 PM.</p>
+                </div>
+
+                <!-- Time slots -->
+                <div class="mb-4">
+                  <label class="form-label d-block">Available time slots *</label>
+                  <div id="slotEmptyMsg" class="text-secondary small py-3">Please select a date above to see available slots.</div>
+                  <div class="slot-grid d-none" id="slotGrid"></div>
+                  <div class="slot-legend mt-3" id="slotLegend" style="display:none;">
+                    <span><span class="legend-dot legend-available"></span> Available</span>
+                    <span><span class="legend-dot legend-selected"></span> Selected</span>
+                    <span><span class="legend-dot legend-booked"></span> Booked</span>
+                  </div>
+                  <input type="hidden" id="selectedSlot">
+                  <div class="invalid-feedback d-block" id="slotError" style="display:none;">Please select a time slot.</div>
+                </div>
+
+                <!-- Contact details -->
+                <hr class="my-4">
+                <h6 class="fw-bold mb-3">Your details</h6>
+
+                <div class="row g-3">
+                  <div class="col-md-6">
+                    <label for="fullName" class="form-label">Full name *</label>
+                    <input type="text" class="form-control" id="fullName" placeholder="e.g. Alexander Bennett" required>
+                    <div class="invalid-feedback">Please enter your name.</div>
+                  </div>
+                  <div class="col-md-6">
+                    <label for="companyName" class="form-label">Company (optional)</label>
+                    <input type="text" class="form-control" id="companyName" placeholder="e.g. Bennett Holdings Ltd">
+                  </div>
+                  <div class="col-md-6">
+                    <label for="emailAddr" class="form-label">Email *</label>
+                    <input type="email" class="form-control" id="emailAddr" placeholder="you@company.co.uk" required>
+                    <div class="invalid-feedback">Please enter a valid email.</div>
+                  </div>
+                  <div class="col-md-6">
+                    <label for="phoneNum" class="form-label">Telephone *</label>
+                    <input type="tel" class="form-control" id="phoneNum" placeholder="+44 20 7123 4567" required>
+                    <div class="invalid-feedback">Please enter a contact number.</div>
+                  </div>
+                  <div class="col-12">
+                    <label for="messageBox" class="form-label">Brief description of your matter (optional)</label>
+                    <textarea class="form-control" id="messageBox" rows="3" placeholder="A short summary helps your partner prepare for the meeting."></textarea>
+                  </div>
+                  <div class="col-12">
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" id="privacyConsent" required>
+                      <label class="form-check-label small text-secondary" for="privacyConsent">
+                        I agree to Ashworth &amp; Grey contacting me about this booking. *
+                      </label>
+                      <div class="invalid-feedback">Please confirm to proceed.</div>
+                    </div>
+                  </div>
+                  <div class="col-12 mt-2">
+                    <button type="submit" class="btn btn-gold btn-lg px-5 py-3 rounded-pill fw-semibold">
+                      <i class="bi bi-calendar-check me-2"></i>Confirm Booking
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </div>
+
+            <!-- STEP 2: Confirmation -->
+            <div id="bookingConfirmed" class="d-none">
+              <div class="confirmation-card">
+                <div class="check-circle"><i class="bi bi-check-lg"></i></div>
+                <h3 class="h4 mb-2">Consultation Reserved</h3>
+                <p class="text-secondary mb-4">A confirmation has been sent to <strong id="confirmEmail"></strong>. Please save your booking reference below.</p>
+
+                <div class="booking-summary text-start mb-4">
+                  <div class="row g-3">
+                    <div class="col-sm-6">
+                      <div class="label">Booking Reference</div>
+                      <div class="value booking-ref" id="confirmRef">AG-0000-0000</div>
+                    </div>
+                    <div class="col-sm-6">
+                      <div class="label">Practice Area</div>
+                      <div class="value" id="confirmArea">—</div>
+                    </div>
+                    <div class="col-sm-6">
+                      <div class="label">Date</div>
+                      <div class="value" id="confirmDate">—</div>
+                    </div>
+                    <div class="col-sm-6">
+                      <div class="label">Time</div>
+                      <div class="value" id="confirmTime">—</div>
+                    </div>
+                    <div class="col-sm-6">
+                      <div class="label">Partner</div>
+                      <div class="value" id="confirmPartner">—</div>
+                    </div>
+                    <div class="col-sm-6">
+                      <div class="label">Location</div>
+                      <div class="value">42 Cornhill, London EC3V 3ND</div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="d-flex flex-wrap gap-2 justify-content-center">
+                  <button type="button" class="btn btn-outline-gold rounded-pill px-4 py-2" onclick="window.print()">
+                    <i class="bi bi-printer me-1"></i> Print confirmation
+                  </button>
+                  <button type="button" class="btn btn-outline-gold rounded-pill px-4 py-2" id="newBookingBtn">
+                    <i class="bi bi-plus-lg me-1"></i> Book another slot
+                  </button>
+                  <a href="index.html" class="btn btn-gold rounded-pill px-4 py-2">Back to home</a>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MAP -->
+  <section class="pb-5">
+    <div class="container">
+      <div class="map-wrap">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2483.0402415893137!2d-0.08948982346486143!3d51.51351097181458!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487603552f2d4b6b%3A0x8f0a4a2d2e5c4b3a!2s42%20Cornhill%2C%20London%20EC3V%203ND!5e0!3m2!1sen!2suk!4v1700000000000!5m2!1sen!2suk"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          title="Ashworth & Grey Solicitors LLP, 42 Cornhill, London">
+        </iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-4">
+          <h5 class="footer-brand"><span class="brand-mark">A</span>Ashworth <span class="brand-amp">&</span> Grey</h5>
+          <p class="footer-text">Corporate law firm based in the City of London, advising businesses in the UK and internationally since 2008.</p>
+          <div class="d-flex gap-2 mt-3">
+            <a href="#" class="social-icon" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+            <a href="#" class="social-icon" aria-label="Twitter"><i class="bi bi-twitter-x"></i></a>
+            <a href="#" class="social-icon" aria-label="Email"><i class="bi bi-envelope"></i></a>
+          </div>
+        </div>
+        <div class="col-6 col-lg-2">
+          <h6 class="footer-heading">Firm</h6>
+          <ul class="list-unstyled footer-links">
+            <li><a href="about.html">Our Firm</a></li>
+            <li><a href="attorneys.html">Attorneys</a></li>
+            <li><a href="practice-areas.html">Practice Areas</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-lg-3">
+          <h6 class="footer-heading">Practice Areas</h6>
+          <ul class="list-unstyled footer-links">
+            <li><a href="practice-areas.html#corporate">Corporate Law</a></li>
+            <li><a href="practice-areas.html#realestate">Real Estate</a></li>
+            <li><a href="practice-areas.html#litigation">Litigation</a></li>
+            <li><a href="practice-areas.html#compliance">Compliance</a></li>
+            <li><a href="practice-areas.html#oilgas">Oil &amp; Gas</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3">
+          <h6 class="footer-heading">Office</h6>
+          <p class="footer-text small mb-2">42 Cornhill<br>London EC3V 3ND<br>United Kingdom</p>
+          <p class="footer-text small mb-1"><i class="bi bi-telephone me-1"></i> +44 20 7123 4567</p>
+          <p class="footer-text small mb-0"><i class="bi bi-envelope me-1"></i> hello@ashworthgrey.co.uk</p>
+        </div>
+      </div>
+      <hr class="footer-divider">
+      <div class="d-flex flex-column flex-md-row justify-content-between align-items-center footer-bottom">
+        <p class="mb-2 mb-md-0">© <span class="year"></span> Ashworth &amp; Grey Solicitors LLP. SRA No. 123456.</p>
+        <p class="mb-0"><a href="#">Privacy</a> · <a href="#">Terms</a> · <a href="#">Cookies</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
